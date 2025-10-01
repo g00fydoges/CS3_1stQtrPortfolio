@@ -18,7 +18,29 @@
 <p> Result :
         <span id="resultHere"></span>
 </p>
-<button> Acept Input</button>
+
+<button onclick="acceptInput()">
+    Show resultHere
+</button> </p>
+
+<p>
+<span id="result" ></span>
+</p>
+
+<script>
+    let result = (Number(numPerDay) * 365) * (Number(maxAge) - Number(age));
+
+function acceptInput() {
+    let dGreet = document.getElementById("result").value;
+    document.getElementById("resultHere").innerHTML = '<b> ${age} </b>'
+}
+</script>
+
+
+
+
+
+
 
 <scirpt src="script2.js"></scirpt>
 
